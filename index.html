@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur d'équipe</title>
+</head>
+<body>
+  <h1>Générateur d'équipe</h1>
+  <input type="text" id="names" placeholder="Entrez les prénoms séparés par des virgules">
+  <button id="generateBtn">Générer une équipe</button>
+  <p id="teamName"></p>
+  <ul id="teamList"></ul>
+
+  <script>
+    // Liste de noms d'équipes prédéfinis
+    const teamNames = ["Les Invincibles", "Code Ninjas", "Bug Busters", "JS Masters", "Team Rocket"];
+
+    // parseNames() : convertit la saisie en tableau de prénoms
+    function parseNames(input) {
+      // TODO : séparer les prénoms par virgule, retirer les espaces, ignorer les vides
+    }
+
+    // getRandomTeam() : sélectionne aléatoirement 3 prénoms maximum
+    function getRandomTeam(names, size) {
+      // TODO : mélanger le tableau et retourner les "size" premiers éléments
+    }
+
+    // displayTeam() : affiche le nom d'équipe et la liste des membres dans le HTML
+    function displayTeam(team, name) {
+      // TODO : mettre à jour les éléments #teamName et #teamList
+    }
+
+    // --- Fonction principale ---
+    function main() {
+      const inputValue = document.getElementById('names').value;
+      // TODO : fait appel aux 3 fonctions ci-dessus pour afficher l'équipe
+    }
+
+    document.getElementById('generateBtn').addEventListener('click', main);
+  </script>
+</body>
+</html>
